@@ -4,8 +4,8 @@ const AboutSection = () => {
   const handleDownloadCV = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/cv.pdf'; // You'll need to add your CV file to the public folder
-    link.download = 'Le_Ba_Dac_CV.pdf';
+    link.href = '/LeBaDac_CV_Bosch.pdf'; // Path to your CV file in public folder
+    link.download = 'LeBaDac_CV_Bosch.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
