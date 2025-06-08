@@ -1,0 +1,88 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 245 245 247;
+    --foreground: 28 28 30;
+
+    --card: 255 255 255;
+    --card-foreground: 28 28 30;
+
+    --popover: 255 255 255;
+    --popover-foreground: 28 28 30;
+
+    --primary: 126 211 33;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 245 245 247;
+    --secondary-foreground: 28 28 30;
+
+    --muted: 245 245 247;
+    --muted-foreground: 142 142 147;
+
+    --accent: 80 227 194;
+    --accent-foreground: 28 28 30;
+
+    --destructive: 255 59 48;
+    --destructive-foreground: 255 255 255;
+
+    --border: 229 229 234;
+    --input: 229 229 234;
+    --ring: 126 211 33;
+
+    --radius: 12px;
+
+    --sidebar-background: 255 255 255;
+    --sidebar-foreground: 28 28 30;
+    --sidebar-primary: 126 211 33;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 245 245 247;
+    --sidebar-accent-foreground: 28 28 30;
+    --sidebar-border: 229 229 234;
+    --sidebar-ring: 126 211 33;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-rainbow-subtle text-foreground font-poppins;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-rainbow-gradient bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg;
+  }
+
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-rainbow-primary/30;
+  }
+
+  .timeline-item::before {
+    @apply absolute -left-2 top-0 w-4 h-4 bg-rainbow-primary rounded-full border-4 border-white shadow-lg;
+    content: '';
+  }
+
+  .skill-progress {
+    @apply h-2 bg-gray-200 rounded-full overflow-hidden;
+  }
+
+  .skill-progress-bar {
+    @apply h-full bg-rainbow-gradient rounded-full transition-all duration-1000 ease-out;
+  }
+}
