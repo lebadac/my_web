@@ -163,8 +163,8 @@ const ProjectsSection = () => {
                 ))}
               </div>
               
-              <h3 className="text-xl font-semibold mb-3 text-gray-800 text-justify">{project.title}</h3>
-              <p className="text-gray-600 mb-4 line-clamp-2 text-justify">{project.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 ">{project.title}</h3>
+              <p className="text-gray-600 mb-4 line-clamp-2 ">{project.description}</p>
               
               <div className="flex flex-wrap gap-2">
                 {project.tech.slice(0, 3).map((tech, techIndex) => (

@@ -24,7 +24,7 @@ const ContactSection = () => {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,    // Template ID từ env
         {
           ...formData,
-          to_email: 'muctieuielts7@gmail.com',
+          to_email: '',
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message
@@ -62,8 +62,8 @@ const ContactSection = () => {
   const contactInfo = [{
     icon: Mail,
     label: "Email",
-    value: "daclb.isresearch@gmail.com",
-    href: "mailto:daclb.isresearch@gmail.com"
+    value: "daclb.work@gmail.com",
+    href: "mailto:daclb.work@gmail.com"
   }, {
     icon: Phone,
     label: "Phone",
@@ -143,7 +143,16 @@ const ContactSection = () => {
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   Message
                 </label>
-                <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bosch-green focus:border-transparent transition-colors resize-none" placeholder="Your message..." />
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  value={formData.message} 
+                  onChange={handleChange} 
+                  required 
+                  rows={10} 
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bosch-green focus:border-transparent transition-colors resize-none" 
+                  placeholder="Your message..." 
+                />
               </div>
 
               <button 

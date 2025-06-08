@@ -1,4 +1,3 @@
-
 import { Code, Users, Brain, Lightbulb } from 'lucide-react';
 
 const SkillsSection = () => {
@@ -8,7 +7,7 @@ const SkillsSection = () => {
     { name: "TensorFlow/Keras", level: 85 },
     { name: "PyTorch", level: 60 },
     { name: "SQL", level: 85 },
-    { name: "JavaScript", level: 75 },
+    { name: "C#/C++", level: 80 },
     { name: "Docker", level: 70 },
     { name: "Git", level: 90 },
   ];
@@ -66,7 +65,7 @@ const SkillsSection = () => {
             title="Hard Skills"
             skills={hardSkills}
             icon={Code}
-            gradient="bg-bosch-gradient"
+            gradient="bg-gradient-to-r from-purple-500 to-pink-500"
           />
           
           <SkillCard
@@ -82,13 +81,13 @@ const SkillsSection = () => {
           <div className="text-center glass-card rounded-xl p-6">
             <Brain className="mx-auto mb-3 text-bosch-green" size={32} />
             <h4 className="font-semibold text-gray-800 mb-2">AI/ML Libraries</h4>
-            <p className="text-sm text-gray-600">TensorFlow, PyTorch, Scikit-learn, Pandas</p>
+            <p className="text-sm text-gray-600">Scikit-learn, TensorFlow,Keras, PyTorch, Pandas, Numpy, Matplotlib, Seaborn</p>
           </div>
           
           <div className="text-center glass-card rounded-xl p-6">
             <Code className="mx-auto mb-3 text-bosch-blue" size={32} />
             <h4 className="font-semibold text-gray-800 mb-2">Programming</h4>
-            <p className="text-sm text-gray-600">Python, R, SQL, C/C++, JavaScript, Kotlin</p>
+            <p className="text-sm text-gray-600">Python, R, SQL, C#/C++, JavaScript, Kotlin, html, css</p>
           </div>
           
           <div className="text-center glass-card rounded-xl p-6">
