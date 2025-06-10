@@ -8,7 +8,7 @@ const SkillsSection = () => {
     { name: "PyTorch", level: 60 },
     { name: "SQL", level: 85 },
     { name: "C#/C++", level: 80 },
-    { name: "Docker", level: 70 },
+    { name: "Docker/ AWS", level: 80 },
     { name: "Git", level: 90 },
   ];
 

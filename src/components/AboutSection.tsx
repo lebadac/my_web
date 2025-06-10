@@ -4,8 +4,8 @@ const AboutSection = () => {
   const handleDownloadCV = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/LeBaDac_CV_Bosch.pdf'; // Path to your CV file in public folder
-    link.download = 'LeBaDac_CV_Bosch.pdf';
+    link.href = '/LeBaDac_CV_BoschGlobalTechnologiesVietNam.pdf'; // Path to your CV file in public folder
+    link.download = 'LeBaDac_CV_BoschGlobalTechnologiesVietNam.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
